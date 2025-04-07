@@ -1,0 +1,21 @@
+<h2>📬 Gmail Integration</h2>
+
+<div style="font-size: 1.5rem; margin-bottom: 1rem;">
+  <strong>Unread emails today:</strong> <span id="gmail-unread-today">–</span>
+</div>
+
+<button onclick="fetchAndStoreEmails()">📥 Fetch Emails</button>
+<div id="gmail-fetch-result" style="margin-top: 1rem;"></div>
+
+<h3 style="margin-top: 2rem;">📑 Stored Emails:</h3>
+<table id="gmail-email-table" border="1" cellspacing="0" cellpadding="6" style="width: 100%; text-align: left;">
+  <thead>
+    <tr>
+      <th>Sender</th>
+      <th>Subject</th>
+    </tr>
+  </thead>
+  <tbody id="gmail-email-body">
+    <tr><td colspan="2">Loading...</td></tr>
+  </tbody>
+</table>

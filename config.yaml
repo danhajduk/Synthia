@@ -1,0 +1,26 @@
+name: "Synthia"
+version: "0.0.2"
+slug: "synthia"
+description: "AI Assistant Add-on"
+startup: application
+ingress: true
+ingress_port: 5000
+panel_icon: mdi:robot
+panel_title: "Synthia"
+boot: auto
+init: false
+homeassistant_api: true
+host_network: false
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+options:
+  openai_api_key: ""
+  openai_admin_api_key: ""
+schema:
+  openai_api_key: str
+  openai_admin_api_key: str
+data: true

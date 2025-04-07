@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Synthia</title>
+  <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Synthia</h1>
+        <nav>
+          <a href="#" onclick="loadSection('home')">Home</a>
+          <a href="#" onclick="loadSection('gmail')">Gmail</a>
+          <a href="#" onclick="loadSection('chat')">Chat</a>
+          <a href="#" onclick="loadSection('settings')">Settings</a>
+        </nav>
+      </header>
+      
+  <div class="container" id="content">
+    <h2>Welcome to Synthia 👋</h2>
+    <p>Click the button below to test the backend!</p>
+    <button onclick="getMessage()">🧠 Get Message</button>
+    <div id="message">Waiting for your command...</div>
+  </div>
+
+  <script src="static/script.js"></script>
+
+</body>
+</html>
